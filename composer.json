@@ -1,0 +1,17 @@
+{
+  "name": "samsara/common",
+  "description": "General classes shared by all Samsara libraries.",
+  "minimum-stability": "dev",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Jordan LeDoux",
+      "email": "jordan.ledoux@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Samsara\\Exceptions\\": "src/Samsara/Exceptions/"
+    }
+  }
+}
