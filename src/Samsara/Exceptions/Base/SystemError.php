@@ -12,4 +12,9 @@ class SystemError extends \Exception
         parent::__construct($message, $code, $previous);
     }
 
+    public function __toString()
+    {
+        return get_class($this).': "'.$this->message.'" in '.$this->file.' (Line: '.$this->line.')\n'.$this->getTraceAsString();
+    }
+
 }

@@ -8,9 +8,9 @@ use Samsara\Exceptions\Base\UsageError;
 class OptionalExit extends UsageError
 {
 
-    public function __construct($reason, $message = "", $code = 0, Exception $previous = null)
+    public function __construct($constraint, $suggestedSolution, $message = "", $code = 0, Exception $previous = null)
     {
-        $message = 'Message: '.$message.' | Reason: '.$reason;
+        $message = 'Message: '.$message.' | Constraint: '.$constraint.' | Suggestion: '.$suggestedSolution;
 
         parent::__construct($message, $code, $previous);
     }
