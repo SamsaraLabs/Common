@@ -25,3 +25,4 @@ fabric.properties
 
 .gitignore
 composer.lock
+vendor
